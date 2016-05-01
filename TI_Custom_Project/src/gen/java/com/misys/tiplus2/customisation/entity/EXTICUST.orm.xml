@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='EXTICUST' package='com.misys.tiplus2.customisation.entity' tablename='EXTICUST' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.EXTICUST.Key_EXTICUST' getter='$key'>
+		<member componentType='primitive' name='key29'>
+			<mapping binder='Long' type='java.lang.Long' columnName='EXTICUST.KEY29'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='typeflag'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTICUST.TYPEFLAG'/>
+	</member>
+	<member componentType='primitive' name='tstamp'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTICUST.TSTAMP'/>
+	</member>
+	<member componentType='primitive' name='inited'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTICUST.INITED'/>
+	</member>
+	<member componentType='primitive' name='ticust'>
+		<mapping binder='Long' type='java.lang.Long' columnName='EXTICUST.TICUST'/>
+	</member>
+</entity>

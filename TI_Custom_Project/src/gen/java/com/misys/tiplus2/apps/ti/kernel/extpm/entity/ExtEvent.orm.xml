@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?><entity package='com.misys.tiplus2.apps.ti.kernel.extpm.entity' optimisticLocking='versionStamp' name='ExtEvent' version='1.0' tablename='EXTEVENT' xmlns='urn:persistence.tiplus2.misys.com'>	<key getter='$key' name='com.misys.tiplus2.apps.ti.kernel.extpm.entity.Key_ExtEvent'>		<member componentType='primitive' name='key'>			<mapping columnName='EXTEVENT.KEY29' binder='Long' type='java.lang.Long' dbProperty='dbValue'></mapping>		</member>	</key>	<discriminator name='typeFlag' value='1874'></discriminator>	<member componentType='primitive' name='typeFlag'>		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTEVENT.TYPEFLAG'></mapping>	</member>	<member componentType='primitive' name='versionStamp'>		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTEVENT.TSTAMP'></mapping>	</member>	<member componentType='primitive' name='Initialised'>		<mapping columnName='EXTEVENT.INITED' binder='Integer' type='java.lang.Integer' dbProperty='dbValue'></mapping>	</member>	<member componentType='key' name='event' class='com.misys.tiplus2.apps.ti.kernel.event.entity.Key_event'>		<dereferencing class='com.misys.tiplus2.apps.ti.kernel.event.entity.event'></dereferencing>		<member componentType='primitive' name='Key'>			<mapping columnName='EXTEVENT.EVENT' binder='Long' type='java.lang.Long' dbProperty='dbValue'></mapping>		</member>	</member>
+
+    <member componentType='datatype' name='extraDataMap' class='com.misys.tiplus2.enigma.customisation.entity.EnigmaCustomisedEntity.ExtraDataMap'>
+        <member componentType='primitive' name='ExtFixed' param='AGNTWAMT'>
+            <mapping columnName='EXTEVENT.AGNTWAMT' binder='Double' type='java.lang.Double' dbProperty='dbValue' precision='12' scale='2'/>
+        </member>
+        <member componentType='primitive' name='ExtFixed' param='AGNTAMT'>
+            <mapping columnName='EXTEVENT.AGNTAMT' binder='Double' type='java.lang.Double' dbProperty='dbValue' precision='12' scale='2'/>
+        </member>
+    </member>
+
+</entity>

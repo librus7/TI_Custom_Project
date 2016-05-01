@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='D5PF' package='com.misys.tiplus2.customisation.entity' tablename='D5PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.D5PF.Key_D5PF' getter='$key'>
+		<member componentType='primitive' name='d5dteh'>
+			<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D5PF.D5DTEH' precision='7' scale='0'/>
+		</member>
+		<member componentType='primitive' name='d5drr'>
+			<mapping binder='String' type='java.lang.String' columnName='D5PF.D5DRR' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='d5dte'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D5PF.D5DTE' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='d5dflg'>
+		<mapping binder='String' type='java.lang.String' columnName='D5PF.D5DFLG' precision='1'/>
+	</member>
+	<member componentType='primitive' name='d5dlm'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D5PF.D5DLM' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='D5PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='d5drar'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D5PF.D5DRAR' precision='11' scale='7'/>
+	</member>
+</entity>

@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='EXTCUST' package='com.misys.tiplus2.customisation.entity' tablename='EXTCUST' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.EXTCUST.Key_EXTCUST' getter='$key'>
+		<member componentType='primitive' name='cust_sbb'>
+			<mapping binder='String' type='java.lang.String' columnName='EXTCUST.CUST_SBB' precision='8'/>
+		</member>
+		<member componentType='primitive' name='cust'>
+			<mapping binder='String' type='java.lang.String' columnName='EXTCUST.CUST' precision='20'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='inited'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTCUST.INITED'/>
+	</member>
+	<member componentType='primitive' name='agntwprc'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='EXTCUST.AGNTWPRC'/>
+	</member>
+</entity>

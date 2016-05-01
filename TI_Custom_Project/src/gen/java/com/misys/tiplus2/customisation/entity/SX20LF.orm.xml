@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='SX20LF' package='com.misys.tiplus2.customisation.entity' tablename='SX20LF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.SX20LF.Key_SX20LF' getter='$key'>
+		<member componentType='primitive' name='addrtype'>
+			<mapping binder='Long' type='java.lang.Long' columnName='SX20LF.ADDRTYPE'/>
+		</member>
+		<member componentType='primitive' name='sequence'>
+			<mapping binder='Integer' type='java.lang.Integer' columnName='SX20LF.SEQUENCE'/>
+		</member>
+		<member componentType='primitive' name='sxcus1_sbb'>
+			<mapping binder='String' type='java.lang.String' columnName='SX20LF.SXCUS1_SBB' precision='8'/>
+		</member>
+		<member componentType='primitive' name='sxcus1'>
+			<mapping binder='String' type='java.lang.String' columnName='SX20LF.SXCUS1' precision='20'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='addr_sbb'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.ADDR_SBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='addressee'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.ADDRESSEE' precision='20'/>
+	</member>
+	<member componentType='primitive' name='numcopies'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='SX20LF.NUMCOPIES'/>
+	</member>
+	<member componentType='primitive' name='numdups'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='SX20LF.NUMDUPS'/>
+	</member>
+	<member componentType='primitive' name='numorig'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='SX20LF.NUMORIG'/>
+	</member>
+	<member componentType='primitive' name='sendintern'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SENDINTERN' precision='1'/>
+	</member>
+	<member componentType='primitive' name='email'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.EMAIL' precision='128'/>
+	</member>
+	<member componentType='primitive' name='svfax'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVFAX' precision='20'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='svnaff'>
+		<mapping binder='LongVarchar' type='java.lang.String' columnName='SX20LF.SVNAFF' precision='1024'/>
+	</member>
+	<member componentType='primitive' name='svna2'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVNA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='svna3'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVNA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='svna4'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVNA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='svna5'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVNA5' precision='35'/>
+	</member>
+	<member componentType='primitive' name='svna1'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVNA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='svphn'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVPHN' precision='20'/>
+	</member>
+	<member componentType='primitive' name='svcsa'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVCSA' precision='35'/>
+	</member>
+	<member componentType='primitive' name='source'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SOURCE' precision='1'/>
+	</member>
+	<member componentType='primitive' name='svtlx'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVTLX' precision='20'/>
+	</member>
+	<member componentType='primitive' name='svc08'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVC08' precision='8'/>
+	</member>
+	<member componentType='primitive' name='svxm'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVXM' precision='2'/>
+	</member>
+	<member componentType='primitive' name='svpzip'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVPZIP' precision='15'/>
+	</member>
+	<member componentType='primitive' name='svlnm'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVLNM' precision='2'/>
+	</member>
+	<member componentType='primitive' name='svswb'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVSWB' precision='4'/>
+	</member>
+	<member componentType='primitive' name='svswbr'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVSWBR' precision='3'/>
+	</member>
+	<member componentType='primitive' name='svcnas'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVCNAS' precision='2'/>
+	</member>
+	<member componentType='primitive' name='svswl'>
+		<mapping binder='String' type='java.lang.String' columnName='SX20LF.SVSWL' precision='2'/>
+	</member>
+</entity>

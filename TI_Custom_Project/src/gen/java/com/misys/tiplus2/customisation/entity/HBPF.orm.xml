@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='HBPF' package='com.misys.tiplus2.customisation.entity' tablename='HBPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.HBPF.Key_HBPF' getter='$key'>
+		<member componentType='primitive' name='hbcfl'>
+			<mapping binder='String' type='java.lang.String' columnName='HBPF.HBCFL' precision='10'/>
+		</member>
+		<member componentType='primitive' name='hblnm'>
+			<mapping binder='String' type='java.lang.String' columnName='HBPF.HBLNM' precision='2'/>
+		</member>
+		<member componentType='primitive' name='hbcfn'>
+			<mapping binder='String' type='java.lang.String' columnName='HBPF.HBCFN' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='hbrnm'>
+		<mapping binder='String' type='java.lang.String' columnName='HBPF.HBRNM' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='HBPF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

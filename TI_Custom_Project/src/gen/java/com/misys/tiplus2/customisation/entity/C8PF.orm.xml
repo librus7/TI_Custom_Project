@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='C8PF' package='com.misys.tiplus2.customisation.entity' tablename='C8PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.C8PF.Key_C8PF' getter='$key'>
+		<member componentType='primitive' name='c8ccy'>
+			<mapping binder='String' type='java.lang.String' columnName='C8PF.C8CCY' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='c8rfi'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8RFI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8bsei'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8BSEI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8bspt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='C8PF.C8BSPT' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='c8psei'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8PSEI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8pspt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='C8PF.C8PSPT' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='c8grp'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8GRP' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8mbr'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8MBR' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8mcd'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8MCD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='c8nu1o'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='C8PF.C8NU1O'/>
+	</member>
+	<member componentType='primitive' name='c8nu1s'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='C8PF.C8NU1S'/>
+	</member>
+	<member componentType='primitive' name='c8dfc'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8DFC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='c8idbc'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8IDBC' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8idbd'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8IDBD' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8ced'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8CED' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8cur'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8CUR' precision='35'/>
+	</member>
+	<member componentType='primitive' name='c8itc'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8ITC' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8ccyn'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8CCYN' precision='3'/>
+	</member>
+	<member componentType='primitive' name='c8sei'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8SEI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8spt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='C8PF.C8SPT' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='c8sri'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8SRI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c8scy'>
+		<mapping binder='String' type='java.lang.String' columnName='C8PF.C8SCY' precision='3'/>
+	</member>
+</entity>

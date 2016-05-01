@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='C4PF' package='com.misys.tiplus2.customisation.entity' tablename='C4PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.C4PF.Key_C4PF' getter='$key'>
+		<member componentType='primitive' name='c4ctp1'>
+			<mapping binder='String' type='java.lang.String' columnName='C4PF.C4CTP1' precision='8'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='c4ctp'>
+		<mapping binder='String' type='java.lang.String' columnName='C4PF.C4CTP' precision='2'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='C4PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c4cbq'>
+		<mapping binder='String' type='java.lang.String' columnName='C4PF.C4CBQ' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c4supp'>
+		<mapping binder='String' type='java.lang.String' columnName='C4PF.C4SUPP' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c4ctd'>
+		<mapping binder='String' type='java.lang.String' columnName='C4PF.C4CTD' precision='35'/>
+	</member>
+</entity>

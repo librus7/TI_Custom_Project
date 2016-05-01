@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='TAPF' package='com.misys.tiplus2.customisation.entity' tablename='TAPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.TAPF.Key_TAPF' getter='$key'>
+		<member componentType='primitive' name='tagrp'>
+			<mapping binder='String' type='java.lang.String' columnName='TAPF.TAGRP' precision='6'/>
+		</member>
+		<member componentType='primitive' name='tasbb'>
+			<mapping binder='String' type='java.lang.String' columnName='TAPF.TASBB' precision='8'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='taofficer'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.TAOFFICER' precision='10'/>
+	</member>
+	<member componentType='primitive' name='tacna'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.TACNA' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tagrd'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.TAGRD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tapgrp'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.TAPGRP' precision='6'/>
+	</member>
+	<member componentType='primitive' name='tapsbb'>
+		<mapping binder='String' type='java.lang.String' columnName='TAPF.TAPSBB' precision='8'/>
+	</member>
+</entity>

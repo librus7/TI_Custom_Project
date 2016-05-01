@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CKPF' package='com.misys.tiplus2.customisation.entity' tablename='CKPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CKPF.Key_CKPF' getter='$key'>
+		<member componentType='primitive' name='ckccd'>
+			<mapping binder='String' type='java.lang.String' columnName='CKPF.CKCCD' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='ckpat'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKPAT' precision='10'/>
+	</member>
+	<member componentType='primitive' name='category'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CATEGORY' precision='20'/>
+	</member>
+	<member componentType='primitive' name='ckcrt'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKCRT' precision='3'/>
+	</member>
+	<member componentType='primitive' name='cksde'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKSDE' precision='35'/>
+	</member>
+	<member componentType='primitive' name='ckdrt'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKDRT' precision='3'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='cksna'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKSNA' precision='3'/>
+	</member>
+	<member componentType='primitive' name='ckan'>
+		<mapping binder='String' type='java.lang.String' columnName='CKPF.CKAN' precision='12'/>
+	</member>
+</entity>

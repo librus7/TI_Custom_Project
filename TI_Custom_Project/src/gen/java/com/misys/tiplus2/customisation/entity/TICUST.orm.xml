@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='TICUST' package='com.misys.tiplus2.customisation.entity' tablename='TICUST' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.TICUST.Key_TICUST' getter='$key'>
+		<member componentType='primitive' name='key97'>
+			<mapping binder='Long' type='java.lang.Long' columnName='TICUST.KEY97'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='typeflag'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='TICUST.TYPEFLAG'/>
+	</member>
+	<member componentType='primitive' name='tstamp'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='TICUST.TSTAMP'/>
+	</member>
+	<member componentType='primitive' name='int_consol'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.INT_CONSOL' precision='1'/>
+	</member>
+	<member componentType='primitive' name='timt103_c'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.TIMT103_C' precision='1'/>
+	</member>
+	<member componentType='primitive' name='taxexem'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.TAXEXEM' precision='1'/>
+	</member>
+	<member componentType='primitive' name='fxrchrg'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.FXRCHRG' precision='6'/>
+	</member>
+	<member componentType='primitive' name='chrg_grp'>
+		<mapping binder='Long' type='java.lang.Long' columnName='TICUST.CHRG_GRP'/>
+	</member>
+	<member componentType='primitive' name='corpaccess'>
+		<mapping binder='Long' type='java.lang.Long' columnName='TICUST.CORPACCESS'/>
+	</member>
+	<member componentType='primitive' name='custsbb'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.CUSTSBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='custmnm'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.CUSTMNM' precision='20'/>
+	</member>
+	<member componentType='primitive' name='cutoff_amt'>
+		<mapping binder='Long' type='java.lang.Long' columnName='TICUST.CUTOFF_AMT' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='cutoff_ccy'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.CUTOFF_CCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='cutoff_rcd'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.CUTOFF_RCD' precision='6'/>
+	</member>
+	<member componentType='primitive' name='extfield'>
+		<mapping binder='Long' type='java.lang.Long' columnName='TICUST.EXTFIELD'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='fxrprin'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.FXRPRIN' precision='6'/>
+	</member>
+	<member componentType='primitive' name='swackreqd'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.SWACKREQD' precision='1'/>
+	</member>
+	<member componentType='primitive' name='instrs'>
+		<mapping binder='Clob' type='java.lang.String' columnName='TICUST.INSTRS' precision='10000'/>
+	</member>
+	<member componentType='primitive' name='suspend_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.SUSPEND_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='suspend_ti'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.SUSPEND_TI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='translit'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.TRANSLIT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='workg'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.WORKG' precision='15'/>
+	</member>
+	<member componentType='primitive' name='gateway'>
+		<mapping binder='String' type='java.lang.String' columnName='TICUST.GATEWAY' precision='1'/>
+	</member>
+</entity>

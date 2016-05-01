@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CVPF' package='com.misys.tiplus2.customisation.entity' tablename='CVPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CVPF.Key_CVPF' getter='$key'>
+		<member componentType='primitive' name='cvcna'>
+			<mapping binder='String' type='java.lang.String' columnName='CVPF.CVCNA' precision='2'/>
+		</member>
+		<member componentType='primitive' name='cvyoc'>
+			<mapping binder='Integer' type='java.lang.Integer' columnName='CVPF.CVYOC'/>
+		</member>
+		<member componentType='primitive' name='cvccy'>
+			<mapping binder='String' type='java.lang.String' columnName='CVPF.CVCCY' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='cvdiy'>
+		<mapping binder='Varchar' type='java.lang.String' columnName='CVPF.CVDIY' precision='366' varying='true'/>
+	</member>
+	<member componentType='primitive' name='cvdoo'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CVPF.CVDOO'/>
+	</member>
+	<member componentType='primitive' name='cvcld'>
+		<mapping binder='String' type='java.lang.String' columnName='CVPF.CVCLD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CVPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='cvdiw'>
+		<mapping binder='String' type='java.lang.String' columnName='CVPF.CVDIW' precision='7'/>
+	</member>
+</entity>

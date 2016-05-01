@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='C7PF' package='com.misys.tiplus2.customisation.entity' tablename='C7PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.C7PF.Key_C7PF' getter='$key'>
+		<member componentType='primitive' name='c7cna'>
+			<mapping binder='String' type='java.lang.String' columnName='C7PF.C7CNA' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='c7rfi'>
+		<mapping binder='String' type='java.lang.String' columnName='C7PF.C7RFI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='isocna'>
+		<mapping binder='String' type='java.lang.String' columnName='C7PF.ISOCNA' precision='2'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='C7PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c7tenor'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='C7PF.C7TENOR'/>
+	</member>
+	<member componentType='primitive' name='c7cnm'>
+		<mapping binder='String' type='java.lang.String' columnName='C7PF.C7CNM' precision='35'/>
+	</member>
+</entity>

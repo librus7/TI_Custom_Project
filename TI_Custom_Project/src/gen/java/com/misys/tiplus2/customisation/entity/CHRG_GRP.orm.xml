@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CHRG_GRP' package='com.misys.tiplus2.customisation.entity' tablename='CHRG_GRP' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CHRG_GRP.Key_CHRG_GRP' getter='$key'>
+		<member componentType='primitive' name='chgrp_key'>
+			<mapping binder='Long' type='java.lang.Long' columnName='CHRG_GRP.CHGRP_KEY'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='typeflag'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CHRG_GRP.TYPEFLAG'/>
+	</member>
+	<member componentType='primitive' name='tstamp'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CHRG_GRP.TSTAMP'/>
+	</member>
+	<member componentType='primitive' name='chgrp_code'>
+		<mapping binder='String' type='java.lang.String' columnName='CHRG_GRP.CHGRP_CODE' precision='6'/>
+	</member>
+	<member componentType='primitive' name='chgrp_desc'>
+		<mapping binder='String' type='java.lang.String' columnName='CHRG_GRP.CHGRP_DESC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CHRG_GRP.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='FSPF' package='com.misys.tiplus2.customisation.entity' tablename='FSPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.FSPF.Key_FSPF' getter='$key'>
+		<member componentType='primitive' name='fsing'>
+			<mapping binder='String' type='java.lang.String' columnName='FSPF.FSING' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='fsingd'>
+		<mapping binder='String' type='java.lang.String' columnName='FSPF.FSINGD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='FSPF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

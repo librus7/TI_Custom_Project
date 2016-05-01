@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='C5PF' package='com.misys.tiplus2.customisation.entity' tablename='C5PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.C5PF.Key_C5PF' getter='$key'>
+		<member componentType='primitive' name='c5atp'>
+			<mapping binder='String' type='java.lang.String' columnName='C5PF.C5ATP' precision='10'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='c5idbc'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5IDBC' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c5idbd'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5IDBD' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c5atd'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5ATD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='c5sc46'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5SC46' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c5sc47'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5SC47' precision='1'/>
+	</member>
+	<member componentType='primitive' name='c5vte'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.C5VTE' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='C5PF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

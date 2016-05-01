@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='OBPF' package='com.misys.tiplus2.customisation.entity' tablename='OBPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.OBPF.Key_OBPF' getter='$key'>
+		<member componentType='primitive' name='obdlp'>
+			<mapping binder='String' type='java.lang.String' columnName='OBPF.OBDLP' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='obapp'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBAPP' precision='2'/>
+	</member>
+	<member componentType='primitive' name='obbdt'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBBDT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obactb'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBACTB' precision='10'/>
+	</member>
+	<member componentType='primitive' name='obdpd'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBDPD' precision='35'/>
+	</member>
+	<member componentType='primitive' name='obdtyf'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBDTYF' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obiig6'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBIIG6' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obing'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBING' precision='2'/>
+	</member>
+	<member componentType='primitive' name='obdic'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBDIC' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obychq'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBYCHQ' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obyddb'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBYDDB' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obysda'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBYSDA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='obtdt'>
+		<mapping binder='String' type='java.lang.String' columnName='OBPF.OBTDT' precision='1'/>
+	</member>
+</entity>

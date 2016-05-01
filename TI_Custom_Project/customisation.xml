@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customisation xmlns="urn:customisation.extension.tiplus2.misys.com" version="1.4" sdk="A">
+    <variants>
+    </variants>
+    <extensions>
+        <extension name="Customer">
+            <fields>
+                <field column="AGNTWPRC" name="AgentWithholdingPercentage" code="AAA">
+                    <description><![CDATA[Agent Withholding Percentage]]></description>
+                    <dbtype type="DB_INTEGER"/>
+                    <control-type>
+                        <text lines="1"/>
+                    </control-type>
+                </field>
+            </fields>
+            <layouts>
+                <layout name="Default" field-group="Default">
+                    <label row="1" column="1" colspan="1" control-ref=""><![CDATA[Agent Withholding %]]></label>
+                    <control field="AGNTWPRC" row="1" column="2" colspan="1" rowspan="1" validation="optional"/>
+                </layout>
+            </layouts>
+            <associations>
+                <association major="C" minor="C">
+                    <layout-ref name="Default"/>
+                </association>
+            </associations>
+        </extension>
+        <extension name="Event">
+            <fields>
+                <field column="AGNTWAMT" name="AgentWithholdingAmount" code="AAB">
+                    <description><![CDATA[Agent Withholding Amount]]></description>
+                    <dbtype type="DB_NUMERIC" length="12" scale="2"/>
+                    <control-type>
+                        <text lines="1"/>
+                    </control-type>
+                </field>
+                <field column="AGNTAMT" name="AgentAmount" code="AAC">
+                    <description><![CDATA[Agent Amount]]></description>
+                    <dbtype type="DB_NUMERIC" length="12" scale="2"/>
+                    <control-type>
+                        <text lines="1"/>
+                    </control-type>
+                </field>
+            </fields>
+            <field-groups>
+                <field-group name="ILCClaimReceivedFldGrp">
+                    <field-ref name="AGNTAMT"/>
+                    <field-ref name="AGNTWAMT"/>
+                </field-group>
+            </field-groups>
+            <layouts>
+                <layout name="Default" field-group="Default">
+                </layout>
+                <layout name="ILCClaimReceivedLayout" field-group="ILCClaimReceivedFldGrp">
+                    <label row="1" column="1" colspan="1" control-ref=""><![CDATA[Agent Amount]]></label>
+                    <label row="2" column="1" colspan="1" control-ref=""><![CDATA[Agent Withholding Amount]]></label>
+                    <control field="AGNTAMT" row="1" column="2" colspan="1" rowspan="1" validation="optional"/>
+                    <control field="AGNTWAMT" row="2" column="2" colspan="1" rowspan="1" validation="optional"/>
+                </layout>
+            </layouts>
+            <associations>
+                <association major="ILC" minor="CRC">
+                    <layout-ref name="ILCClaimReceivedLayout" extension-pane="com.misys.tiplus2.customisation.pane.ILCClaimReceivedEventPane" extension-handler="com.misys.tiplus2.customisation.extension.ILCClaimReceivedEventExtension"/>
+                </association>
+            </associations>
+        </extension>
+    </extensions>
+    <static-defs table-prefix="EXT">
+    </static-defs>
+</customisation>

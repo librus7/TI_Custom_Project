@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='HAPF' package='com.misys.tiplus2.customisation.entity' tablename='HAPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.HAPF.Key_HAPF' getter='$key'>
+		<member componentType='primitive' name='hacfk'>
+			<mapping binder='String' type='java.lang.String' columnName='HAPF.HACFK' precision='5'/>
+		</member>
+		<member componentType='primitive' name='halnm'>
+			<mapping binder='String' type='java.lang.String' columnName='HAPF.HALNM' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='HAPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='hasdx'>
+		<mapping binder='String' type='java.lang.String' columnName='HAPF.HASDX' precision='66'/>
+	</member>
+</entity>

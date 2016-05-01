@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CXPF' package='com.misys.tiplus2.customisation.entity' tablename='CXPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CXPF.Key_CXPF' getter='$key'>
+		<member componentType='primitive' name='cxmnm'>
+			<mapping binder='String' type='java.lang.String' columnName='CXPF.CXMNM' precision='10'/>
+		</member>
+		<member componentType='primitive' name='cxyoc'>
+			<mapping binder='Integer' type='java.lang.Integer' columnName='CXPF.CXYOC'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='cxdiy'>
+		<mapping binder='Varchar' type='java.lang.String' columnName='CXPF.CXDIY' precision='366' varying='true'/>
+	</member>
+	<member componentType='primitive' name='cxdfn'>
+		<mapping binder='Date' type='java.util.Date' columnName='CXPF.CXDFN'/>
+	</member>
+	<member componentType='primitive' name='cxdlm'>
+		<mapping binder='Date' type='java.util.Date' columnName='CXPF.CXDLM'/>
+	</member>
+	<member componentType='primitive' name='cxdoo'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CXPF.CXDOO'/>
+	</member>
+	<member componentType='primitive' name='cxdesc'>
+		<mapping binder='String' type='java.lang.String' columnName='CXPF.CXDESC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CXPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='cxdiw'>
+		<mapping binder='String' type='java.lang.String' columnName='CXPF.CXDIW' precision='7'/>
+	</member>
+</entity>

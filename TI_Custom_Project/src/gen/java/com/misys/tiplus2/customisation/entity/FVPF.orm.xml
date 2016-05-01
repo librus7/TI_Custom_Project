@@ -1,0 +1,371 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='FVPF' package='com.misys.tiplus2.customisation.entity' tablename='FVPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.FVPF.Key_FVPF' getter='$key'>
+		<member componentType='primitive' name='bank_ent'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.BANK_ENT' precision='8'/>
+		</member>
+		<member componentType='primitive' name='fvbrnm'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVBRNM' precision='8'/>
+		</member>
+		<member componentType='primitive' name='fvccy'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCCY' precision='3'/>
+		</member>
+		<member componentType='primitive' name='fvcus1sbb'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUS1SBB' precision='8'/>
+		</member>
+		<member componentType='primitive' name='fvcus1'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUS1' precision='20'/>
+		</member>
+		<member componentType='primitive' name='fving'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVING' precision='2'/>
+		</member>
+		<member componentType='primitive' name='fvmvt'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVMVT' precision='1'/>
+		</member>
+		<member componentType='primitive' name='fvprf'>
+			<mapping binder='String' type='java.lang.String' columnName='FVPF.FVPRF' precision='1'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='autoch53'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.AUTOCH53' precision='1'/>
+	</member>
+	<member componentType='primitive' name='fvoani'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVOANI' precision='34'/>
+	</member>
+	<member componentType='primitive' name='cheque44'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.CHEQUE44' precision='16'/>
+	</member>
+	<member componentType='primitive' name='tifvcxm'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCXM' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvcvr'>
+		<mapping binder='LongVarchar' type='java.lang.String' columnName='FVPF.TIFVCVR' precision='222'/>
+	</member>
+	<member componentType='primitive' name='timecod1_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECOD1_1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet1_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET1_1' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecod2_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECOD2_1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet2_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET2_1' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecod3_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECOD3_1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet3_1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET3_1' precision='9'/>
+	</member>
+	<member componentType='primitive' name='tifvswacc'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVSWACC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvswb'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVSWB' precision='4'/>
+	</member>
+	<member componentType='primitive' name='fvswbr'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVSWBR' precision='3'/>
+	</member>
+	<member componentType='primitive' name='fvcnas'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCNAS' precision='2'/>
+	</member>
+	<member componentType='primitive' name='fvswl'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVSWL' precision='2'/>
+	</member>
+	<member componentType='primitive' name='fvcus1sbbi'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUS1SBBI' precision='8'/>
+	</member>
+	<member componentType='primitive' name='fvcus1i'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUS1I' precision='20'/>
+	</member>
+	<member componentType='primitive' name='fvna1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvna2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvna3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvna4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvtlit'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVTLIT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tifvintac'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINTAC' precision='34'/>
+	</member>
+	<member componentType='primitive' name='tifvirac'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRAC' precision='34'/>
+	</member>
+	<member componentType='primitive' name='accoun72'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.ACCOUN72' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvirs1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRS1' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvirs4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRS4' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvirs2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRS2' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvirs3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRS3' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvircsbb'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRCSBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='tifvircus'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRCUS' precision='20'/>
+	</member>
+	<member componentType='primitive' name='tifvira1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvira2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvira3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvira4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvirtl'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVIRTL' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tifvexrat'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FVPF.TIFVEXRAT' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='tifvinamt'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVINAMT' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvinccy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINCCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvins1cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS1CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins1tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS1TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvins2cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS2CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins2tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS2TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvins3cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS3CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins3tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS3TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvins4cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS4CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins4tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS4TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvins5cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS5CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins5tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS5TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvins6cd'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS6CD' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvins6tx'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVINS6TX' precision='30'/>
+	</member>
+	<member componentType='primitive' name='tifvchg1am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG1AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg1cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG1CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvchg2am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG2AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg2cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG2CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvchg3am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG3AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg3cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG3CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvchg4am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG4AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg4cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG4CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvchg5am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG5AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg5cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG5CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvchg6am'>
+		<mapping binder='Long' type='java.lang.Long' columnName='FVPF.TIFVCHG6AM' precision='15' scale='0'/>
+	</member>
+	<member componentType='primitive' name='tifvchg6cy'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVCHG6CY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvregrep'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVREGREP' precision='111'/>
+	</member>
+	<member componentType='primitive' name='tifvsvclvl'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVSVCLVL' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvtrntyp'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVTRNTYP' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvmsgtyp'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVMSGTYP' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvocacc'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCACC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvs1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVS1' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvs4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVS4' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvs2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVS2' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvs3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVS3' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvocsbb'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCSBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='tifvocus'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCUS' precision='20'/>
+	</member>
+	<member componentType='primitive' name='tifvoca1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvoca2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvoca3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvoca4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvoctl'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVOCTL' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tifvpay'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVPAY' precision='148'/>
+	</member>
+	<member componentType='primitive' name='accoun54'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.ACCOUN54' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvrcs1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCS1' precision='4'/>
+	</member>
+	<member componentType='primitive' name='tifvrcs4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCS4' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvrcs2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCS2' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvrcs3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCS3' precision='2'/>
+	</member>
+	<member componentType='primitive' name='tifvrcsbb'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCSBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='tifvrcus'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCUS' precision='20'/>
+	</member>
+	<member componentType='primitive' name='tifvrca1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvrca2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvrca3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvrca4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='tifvrctl'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCTL' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tifvrcac'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVRCAC' precision='34'/>
+	</member>
+	<member componentType='primitive' name='fvchg'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCHG' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tifvstr'>
+		<mapping binder='LongVarchar' type='java.lang.String' columnName='FVPF.TIFVSTR' precision='222'/>
+	</member>
+	<member componentType='primitive' name='tifvsetby'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIFVSETBY' precision='1'/>
+	</member>
+	<member componentType='primitive' name='timecode1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECODE1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET1' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecode2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECODE2' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET2' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecode3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMECODE3' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.TIMEDET3' precision='9'/>
+	</member>
+	<member componentType='primitive' name='fvclci'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCLCI' precision='3'/>
+	</member>
+	<member componentType='primitive' name='fvclc'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCLC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='fvcusi'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUSI' precision='6'/>
+	</member>
+	<member componentType='primitive' name='fvcus'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVCUS' precision='6'/>
+	</member>
+	<member componentType='primitive' name='fvnr1'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvnr2'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvnr3'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvnr4'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvnr5'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR5' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fvnr6'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.FVNR6' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='FVPF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

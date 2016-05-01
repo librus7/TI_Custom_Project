@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='GFPF' package='com.misys.tiplus2.customisation.entity' tablename='GFPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.GFPF.Key_GFPF' getter='$key'>
+		<member componentType='primitive' name='gfcus1_sbb'>
+			<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUS1_SBB' precision='8'/>
+		</member>
+		<member componentType='primitive' name='gfcus1'>
+			<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUS1' precision='20'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='gfc201'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFC201' precision='20'/>
+	</member>
+	<member componentType='primitive' name='gfc202'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFC202' precision='20'/>
+	</member>
+	<member componentType='primitive' name='gfc101'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFC101' precision='10'/>
+	</member>
+	<member componentType='primitive' name='gfc102'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFC102' precision='10'/>
+	</member>
+	<member componentType='primitive' name='date_dl'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='GFPF.DATE_DL' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='gfdlm'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='GFPF.GFDLM' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='gfclc'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCLC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gfctp'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCTP' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gfcus'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUS' precision='6'/>
+	</member>
+	<member componentType='primitive' name='gfpclc'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFPCLC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gfpcus'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFPCUS' precision='6'/>
+	</member>
+	<member componentType='primitive' name='clr_number'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.CLR_NUMBER' precision='34'/>
+	</member>
+	<member componentType='primitive' name='gfmtb'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFMTB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tifcmf'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.TIFCMF' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gfpcus1'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFPCUS1' precision='20'/>
+	</member>
+	<member componentType='primitive' name='gfcrf'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCRF' precision='20'/>
+	</member>
+	<member componentType='primitive' name='source'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.SOURCE' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gfca2'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCA2' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gfcub'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUB' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gfcuc'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUC' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gfcpnc'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCPNC' precision='12'/>
+	</member>
+	<member componentType='primitive' name='gfctp1'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCTP1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='gfcud'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUD' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gfdas'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFDAS' precision='15'/>
+	</member>
+	<member componentType='primitive' name='gfcun'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUN' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gfgrp'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFGRP' precision='6'/>
+	</member>
+	<member componentType='primitive' name='gfcuz'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCUZ' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gflnm'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFLNM' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gfaco'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFACO' precision='10'/>
+	</member>
+	<member componentType='primitive' name='gfcnap'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCNAP' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gfcnal'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCNAL' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gfcnar'>
+		<mapping binder='String' type='java.lang.String' columnName='GFPF.GFCNAR' precision='2'/>
+	</member>
+</entity>

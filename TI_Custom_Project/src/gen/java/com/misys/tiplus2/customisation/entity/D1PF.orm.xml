@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='D1PF' package='com.misys.tiplus2.customisation.entity' tablename='D1PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.D1PF.Key_D1PF' getter='$key'>
+		<member componentType='primitive' name='d1xm'>
+			<mapping binder='String' type='java.lang.String' columnName='D1PF.D1XM' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='d1nsf'>
+		<mapping binder='String' type='java.lang.String' columnName='D1PF.D1NSF' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='D1PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='d1xmd'>
+		<mapping binder='String' type='java.lang.String' columnName='D1PF.D1XMD' precision='25'/>
+	</member>
+</entity>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='HVPF' package='com.misys.tiplus2.customisation.entity' tablename='HVPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.HVPF.Key_HVPF' getter='$key'>
+		<member componentType='primitive' name='hvbrnm'>
+			<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBRNM' precision='8'/>
+		</member>
+		<member componentType='primitive' name='hvlnm'>
+			<mapping binder='String' type='java.lang.String' columnName='HVPF.HVLNM' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='city'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.CITY' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='hvbadff'>
+		<mapping binder='LongVarchar' type='java.lang.String' columnName='HVPF.HVBADFF' precision='1024'/>
+	</member>
+	<member componentType='primitive' name='hvbad2'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBAD2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='hvbad3'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBAD3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='hvbad4'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBAD4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='hvbad5'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBAD5' precision='35'/>
+	</member>
+	<member componentType='primitive' name='hvbad1'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBAD1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='zipcode'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.ZIPCODE' precision='15'/>
+	</member>
+	<member componentType='primitive' name='hvbnm'>
+		<mapping binder='String' type='java.lang.String' columnName='HVPF.HVBNM' precision='70'/>
+	</member>
+</entity>

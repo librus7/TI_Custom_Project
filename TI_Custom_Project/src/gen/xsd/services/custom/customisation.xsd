@@ -1,0 +1,1547 @@
+<?xml version="1.0" standalone="yes"?>
+<xsd:schema attributeFormDefault='unqualified' targetNamespace='urn:custom.service.ti.apps.tiplus2.misys.com' version='2.0' elementFormDefault='qualified' xmlns='urn:custom.service.ti.apps.tiplus2.misys.com' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+    <xsd:annotation>
+        <xsd:appinfo>
+            <msg.customisation>true</msg.customisation>
+        </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexType name='Customer'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name='AgentWithholdingPercentage' type='xsd:int' minOccurs='0'>
+                <xsd:annotation>
+                    <xsd:appinfo>
+                        <msg.event.code>AAA</msg.event.code>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--
+============================================
+category:C,C 
+============================================
+-->
+    <xsd:complexType name='CcCustomer'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Customer'>
+                <xsd:sequence>
+
+
+                    <xsd:element name='AgentWithholdingPercentage' type='xsd:int' minOccurs='0'>
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <java.property.name>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.property.name>
+                                <msg.event.code>AAA</msg.event.code>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+
+
+              </xsd:sequence>
+
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name='Event'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name='AgentWithholdingAmount' type='xsd:decimal' minOccurs='0'>
+                <xsd:annotation>
+                    <xsd:appinfo>
+                        <msg.event.code>AAB</msg.event.code>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name='AgentAmount' type='xsd:decimal' minOccurs='0'>
+                <xsd:annotation>
+                    <xsd:appinfo>
+                        <msg.event.code>AAC</msg.event.code>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--
+============================================
+category:CPCI,CPCI 
+============================================
+-->
+    <xsd:complexType name='CPCIpcirEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPCO,CPCO 
+============================================
+-->
+    <xsd:complexType name='CPCOpcorEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPCO,CPCO 
+============================================
+-->
+    <xsd:complexType name='CPCOpcocEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPHI,CPHI 
+============================================
+-->
+    <xsd:complexType name='CPHIphirEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPHO,CPHO 
+============================================
+-->
+    <xsd:complexType name='CPHOphorEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPHO,CPHO 
+============================================
+-->
+    <xsd:complexType name='CPHOphocEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPSO,CPSO 
+============================================
+-->
+    <xsd:complexType name='CPSOpsorEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CPSO,CPSO 
+============================================
+-->
+    <xsd:complexType name='CPSOpsocEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CRN,CRN 
+============================================
+-->
+    <xsd:complexType name='CRNccreEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CRN,CRN 
+============================================
+-->
+    <xsd:complexType name='CRNcadjEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CRN,CRN 
+============================================
+-->
+    <xsd:complexType name='CRNccanEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:CRN,CRN 
+============================================
+-->
+    <xsd:complexType name='CRNclouEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGTvegEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGTegtdEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGTnaegEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGTngegEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGTcegEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:EGT,EGT 
+============================================
+-->
+    <xsd:complexType name='EGToegEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCadeEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCelcdEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCnameEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCassEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCbnmeEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCbcrEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCcoeEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCpodEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ELC,ELC 
+============================================
+-->
+    <xsd:complexType name='ELCitxEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ESB,ESB 
+============================================
+-->
+    <xsd:complexType name='ESBvesEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ESB,ESB 
+============================================
+-->
+    <xsd:complexType name='ESBnaesEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ESB,ESB 
+============================================
+-->
+    <xsd:complexType name='ESBngesEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ESB,ESB 
+============================================
+-->
+    <xsd:complexType name='ESBcesEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ESB,ESB 
+============================================
+-->
+    <xsd:complexType name='ESBoesEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:FAC,FAC 
+============================================
+-->
+    <xsd:complexType name='FACfdrwEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:FAC,FAC 
+============================================
+-->
+    <xsd:complexType name='FACffdaEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:FSA,FSA 
+============================================
+-->
+    <xsd:complexType name='FSAcsaEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IDS,IDS 
+============================================
+-->
+    <xsd:complexType name='IDSidcaEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IDS,IDS 
+============================================
+-->
+    <xsd:complexType name='IDSidcrEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTnaigEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTnigEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTcigEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTiigEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTigtdEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IGT,IGT 
+============================================
+-->
+    <xsd:complexType name='IGTaigEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCnamiEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCcaiEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCcoiEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCisiEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCilcdEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ILC,ILC 
+============================================
+-->
+    <xsd:complexType name='ILCpocEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:INV,INV 
+============================================
+-->
+    <xsd:complexType name='INViamdEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:INV,INV 
+============================================
+-->
+    <xsd:complexType name='INVicanEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:INV,INV 
+============================================
+-->
+    <xsd:complexType name='INVicreEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:INV,INV 
+============================================
+-->
+    <xsd:complexType name='INVifeiEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IRF,IRF 
+============================================
+-->
+    <xsd:complexType name='IRFircaEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IRF,IRF 
+============================================
+-->
+    <xsd:complexType name='IRFircrEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IOA,IOA 
+============================================
+-->
+    <xsd:complexType name='IOAioisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IOA,IOA 
+============================================
+-->
+    <xsd:complexType name='IOAionmEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IOA,IOA 
+============================================
+-->
+    <xsd:complexType name='IOAiocaEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IOA,IOA 
+============================================
+-->
+    <xsd:complexType name='IOAioocEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:IOA,IOA 
+============================================
+-->
+    <xsd:complexType name='IOAiocoEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBnaisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBnisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBcisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBiisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBaisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:ISB,ISB 
+============================================
+-->
+    <xsd:complexType name='ISBoisEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:LIC,LIC 
+============================================
+-->
+    <xsd:complexType name='LICamlEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:LIC,LIC 
+============================================
+-->
+    <xsd:complexType name='LIClcnEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:LIC,LIC 
+============================================
+-->
+    <xsd:complexType name='LICcolEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:LIC,LIC 
+============================================
+-->
+    <xsd:complexType name='LIClccEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:SHG,SHG 
+============================================
+-->
+    <xsd:complexType name='SHGscoEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+<!--
+============================================
+category:SHG,SHG 
+============================================
+-->
+    <xsd:complexType name='SHGscrEvent'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Event'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name='Posting'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>true</msg.entity.type>
+                <msg.entity.base.type>true</msg.entity.base.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--
+============================================
+category:P,P 
+============================================
+-->
+    <xsd:complexType name='PpPosting'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>true</msg.entity.type>
+                <java.entity.class.fullName>com.misys.tiplus2.apps.ti.kernel.extpm.entity.ExtAPI</java.entity.class.fullName>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='Posting'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name='TICustomer'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--
+============================================
+category:T,T 
+============================================
+-->
+    <xsd:complexType name='TtTICustomer'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:restriction base='TICustomer'>
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name='EventStep'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--
+============================================
+category:S,S 
+============================================
+-->
+    <xsd:complexType name='SsEventStep'>
+        <xsd:annotation>
+            <xsd:appinfo>
+                <msg.entity.type>false</msg.entity.type>
+                <java.class.fullName>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.class.fullName>
+                <msg.customisation.type>true</msg.customisation.type>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+	      <xsd:extension base='EventStep'>
+                <xsd:sequence/>
+	      </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>
+
+

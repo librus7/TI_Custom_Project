@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='RFPF' package='com.misys.tiplus2.customisation.entity' tablename='RFPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.RFPF.Key_RFPF' getter='$key'>
+		<member componentType='primitive' name='rfmcy'>
+			<mapping binder='String' type='java.lang.String' columnName='RFPF.RFMCY' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='rfrdt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='RFPF.RFRDT' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='rffrt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='RFPF.RFFRT' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='rfrcr'>
+		<mapping binder='String' type='java.lang.String' columnName='RFPF.RFRCR' precision='1'/>
+	</member>
+	<member componentType='primitive' name='rfgcy'>
+		<mapping binder='String' type='java.lang.String' columnName='RFPF.RFGCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='rfidt'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='RFPF.RFIDT' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='rfdlm'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='RFPF.RFDLM' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='RFPF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

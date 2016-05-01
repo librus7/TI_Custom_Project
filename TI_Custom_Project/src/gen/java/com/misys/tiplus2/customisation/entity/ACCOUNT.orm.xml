@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='ACCOUNT' package='com.misys.tiplus2.customisation.entity' tablename='ACCOUNT' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.ACCOUNT.Key_ACCOUNT' getter='$key'>
+		<member componentType='primitive' name='acct_key'>
+			<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.ACCT_KEY' precision='34'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='typeflag'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='ACCOUNT.TYPEFLAG'/>
+	</member>
+	<member componentType='primitive' name='tstamp'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='ACCOUNT.TSTAMP'/>
+	</member>
+	<member componentType='primitive' name='acc_seqno'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='ACCOUNT.ACC_SEQNO'/>
+	</member>
+	<member componentType='primitive' name='acc_type'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.ACC_TYPE' precision='10'/>
+	</member>
+	<member componentType='primitive' name='bo_acctno'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.BO_ACCTNO' precision='34'/>
+	</member>
+	<member componentType='primitive' name='brch_mnm'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.BRCH_MNM' precision='8'/>
+	</member>
+	<member componentType='primitive' name='category'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.CATEGORY' precision='20'/>
+	</member>
+	<member componentType='primitive' name='contingent'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.CONTINGENT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='country'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.COUNTRY' precision='2'/>
+	</member>
+	<member componentType='primitive' name='cus_sbb'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.CUS_SBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='cus_mnm'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.CUS_MNM' precision='20'/>
+	</member>
+	<member componentType='primitive' name='dateclosed'>
+		<mapping binder='Date' type='java.util.Date' columnName='ACCOUNT.DATECLOSED'/>
+	</member>
+	<member componentType='primitive' name='date_dwnl'>
+		<mapping binder='Date' type='java.util.Date' columnName='ACCOUNT.DATE_DWNL'/>
+	</member>
+	<member componentType='primitive' name='datemaint'>
+		<mapping binder='Date' type='java.util.Date' columnName='ACCOUNT.DATEMAINT'/>
+	</member>
+	<member componentType='primitive' name='dateopened'>
+		<mapping binder='Date' type='java.util.Date' columnName='ACCOUNT.DATEOPENED'/>
+	</member>
+	<member componentType='primitive' name='descr1'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.DESCR1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='descr2'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.DESCR2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='ext_acctno'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.EXT_ACCTNO' precision='34'/>
+	</member>
+	<member componentType='primitive' name='iban'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.IBAN' precision='34'/>
+	</member>
+	<member componentType='primitive' name='intrnal'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.INTRNAL' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='other_ccy'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.OTHER_CCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='currency'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.CURRENCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='shortname'>
+		<mapping binder='String' type='java.lang.String' columnName='ACCOUNT.SHORTNAME' precision='15'/>
+	</member>
+</entity>

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='DHPF' package='com.misys.tiplus2.customisation.entity' tablename='DHPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.DHPF.Key_DHPF' getter='$key'>
+		<member componentType='primitive' name='dhanmd'>
+			<mapping binder='String' type='java.lang.String' columnName='DHPF.DHANMD' precision='6'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='dhsna'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHSNA' precision='3'/>
+	</member>
+	<member componentType='primitive' name='dhatp'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHATP' precision='10'/>
+	</member>
+	<member componentType='primitive' name='dhbnoc'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHBNOC' precision='12'/>
+	</member>
+	<member componentType='primitive' name='dhcrt'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHCRT' precision='3'/>
+	</member>
+	<member componentType='primitive' name='category'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.CATEGORY' precision='20'/>
+	</member>
+	<member componentType='primitive' name='dhdrt'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHDRT' precision='3'/>
+	</member>
+	<member componentType='primitive' name='dhdia'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.DHDIA' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='DHPF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='C6PF' package='com.misys.tiplus2.customisation.entity' tablename='C6PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.C6PF.Key_C6PF' getter='$key'>
+		<member componentType='primitive' name='c6acd'>
+			<mapping binder='String' type='java.lang.String' columnName='C6PF.C6ACD' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='c6ann'>
+		<mapping binder='String' type='java.lang.String' columnName='C6PF.C6ANN' precision='35'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='C6PF.MNT_IN_BO' precision='1'/>
+	</member>
+</entity>

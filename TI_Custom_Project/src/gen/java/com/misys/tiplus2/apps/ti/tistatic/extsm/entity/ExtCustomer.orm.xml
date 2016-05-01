@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?><entity package='com.misys.tiplus2.apps.ti.tistatic.extsm.entity' name='ExtCustomer' version='1.0' tablename='EXTCUST' xmlns='urn:persistence.tiplus2.misys.com'>	<key getter='$key' name='com.misys.tiplus2.apps.ti.tistatic.extsm.entity.Key_ExtCustomer'>		<member componentType='key' name='customer' class='com.misys.tiplus2.apps.ti.tistatic.customer.entity.Key_customer'>			<dereferencing class='com.misys.tiplus2.apps.ti.tistatic.customer.entity.customer'></dereferencing>			<member componentType='key' name='SourceBankingBusiness' class='com.misys.tiplus2.apps.ti.tistatic.tistatic.entity.Key_branch'>				<dereferencing class='com.misys.tiplus2.apps.ti.tistatic.tistatic.entity.branch'></dereferencing>				<member componentType='primitive' name='code'>					<mapping precision='8' columnName='EXTCUST.CUST_SBB' binder='String' type='java.lang.String' dbProperty='dbValue'></mapping>				</member>			</member>			<member componentType='primitive' name='mnm'>				<mapping precision='20' columnName='EXTCUST.CUST' binder='String' type='java.lang.String' dbProperty='dbValue'></mapping>			</member>		</member>	</key>	<member componentType='primitive' name='Initialised'>		<mapping columnName='EXTCUST.INITED' binder='Integer' type='java.lang.Integer' dbProperty='dbValue'></mapping>	</member>
+
+    <member componentType='datatype' name='extraDataMap' class='com.misys.tiplus2.enigma.customisation.entity.EnigmaCustomisedEntity.ExtraDataMap'>
+        <member componentType='primitive' name='ExtInteger' param='AGNTWPRC'>
+            <mapping columnName='EXTCUST.AGNTWPRC' binder='Integer' type='java.lang.Integer' dbProperty='dbValue'/>
+        </member>
+    </member>
+
+</entity>

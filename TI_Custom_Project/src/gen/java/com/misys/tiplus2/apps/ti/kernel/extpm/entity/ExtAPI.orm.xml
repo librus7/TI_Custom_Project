@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?><entity package='com.misys.tiplus2.apps.ti.kernel.extpm.entity' name='ExtAPI' version='1.0' tablename='EXTPMAPI' xmlns='urn:persistence.tiplus2.misys.com'>	<key getter='$key' name='com.misys.tiplus2.apps.ti.kernel.extpm.entity.Key_ExtAPI'>		<member componentType='primitive' name='SeqNo'>			<mapping columnName='EXTPMAPI.GZSEQ' binder='Integer' type='java.lang.Integer' dbProperty='dbValue'></mapping>		</member>		<member componentType='primitive' name='WSID'>			<mapping precision='36' columnName='EXTPMAPI.GZWSID' binder='String' type='java.lang.String' dbProperty='dbValue'></mapping>		</member>	</key>
+
+    <member componentType='datatype' name='extraDataMap' class='com.misys.tiplus2.enigma.customisation.entity.EnigmaCustomisedEntity.ExtraDataMap'>
+    </member>
+
+</entity>

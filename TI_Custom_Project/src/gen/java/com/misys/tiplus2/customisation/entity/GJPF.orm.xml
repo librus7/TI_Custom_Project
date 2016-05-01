@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='GJPF' package='com.misys.tiplus2.customisation.entity' tablename='GJPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.GJPF.Key_GJPF' getter='$key'>
+		<member componentType='primitive' name='gjnst'>
+			<mapping binder='String' type='java.lang.String' columnName='GJPF.GJNST' precision='6'/>
+		</member>
+		<member componentType='primitive' name='gjmbe'>
+			<mapping binder='String' type='java.lang.String' columnName='GJPF.GJMBE' precision='8'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='gjacct'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJACCT' precision='34'/>
+	</member>
+	<member componentType='primitive' name='gjccy'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJCCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gjnds'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJNDS' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gjabf'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJABF' precision='4'/>
+	</member>
+	<member componentType='primitive' name='gjanf'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJANF' precision='12'/>
+	</member>
+	<member componentType='primitive' name='gjasf'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJASF' precision='4'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gjoan'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJOAN' precision='34'/>
+	</member>
+	<member componentType='primitive' name='gjxmr'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJXMR' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gjxm'>
+		<mapping binder='String' type='java.lang.String' columnName='GJPF.GJXM' precision='2'/>
+	</member>
+</entity>

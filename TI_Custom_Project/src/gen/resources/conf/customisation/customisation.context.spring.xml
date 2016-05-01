@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+    <bean id='default-Customer-pane' class='com.misys.tiplus2.customisation.pane.CustomerPane' scope='prototype'/>
+    <bean id='default-Event-pane' class='com.misys.tiplus2.customisation.pane.EventPane' scope='prototype'/>
+    <bean id='default-Master-pane' class='com.misys.tiplus2.customisation.pane.MasterPane' scope='prototype'/>
+    <bean id='default-Posting-pane' class='com.misys.tiplus2.customisation.pane.PostingPane' scope='prototype'/>
+    <bean id='default-TICustomer-pane' class='com.misys.tiplus2.customisation.pane.TICustomerPane' scope='prototype'/>
+    <bean id='default-EventStep-pane' class='com.misys.tiplus2.customisation.pane.EventStepPane' scope='prototype'/>
+
+    <bean id='c-c-resolver' class='com.misys.tiplus2.enigma.customisation.extensions.SingleLayoutAssociationResolver' scope='prototype'>
+        <property name='layoutId' value='c-c-Default-extension'/>
+        <property name='major' value='C'/>
+        <property name='minor' value='C'/>
+    </bean>
+    <bean id='c-c-Default-extension' class='com.misys.tiplus2.customisation.extension.CustomerExtension' scope='prototype'>
+        <property name='customisedPane'>
+            <ref bean='default-Customer-pane'/>
+        </property>
+        <property name='layoutName' value='CustomerDefault'/>
+        <property name='majorCode' value='C'/>
+        <property name='minorCode' value='C'/>
+    </bean>
+
+
+    <!-- DAOs for ExtCustomer -->
+    <util:map id='ExtCustomerDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+    <bean id='ilc-crc-resolver' class='com.misys.tiplus2.enigma.customisation.extensions.SingleLayoutAssociationResolver' scope='prototype'>
+        <property name='layoutId' value='ilc-crc-ILCClaimReceivedLayout-extension'/>
+        <property name='major' value='ILC'/>
+        <property name='minor' value='CRC'/>
+    </bean>
+    <bean id='ilc-crc-ILCClaimReceivedLayout-extension' class='com.misys.tiplus2.customisation.extension.ILCClaimReceivedEventExtension' scope='prototype'>
+        <property name='customisedPane'>
+            <bean class='com.misys.tiplus2.customisation.pane.ILCClaimReceivedEventPane'/>
+        </property>
+        <property name='layoutName' value='EventILCClaimReceivedLayout'/>
+        <property name='majorCode' value='ILC'/>
+        <property name='minorCode' value='CRC'/>
+    </bean>
+
+
+    <!-- DAOs for ExtEvent -->
+    <util:map id='ExtEventDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+
+
+    <!-- DAOs for ExtMaster -->
+    <util:map id='ExtMasterDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+
+
+    <!-- DAOs for ExtPosting -->
+    <util:map id='ExtPostingDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+
+
+    <!-- DAOs for ExtTICustomer -->
+    <util:map id='ExtTICustomerDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+
+
+    <!-- DAOs for ExtEventStep -->
+    <util:map id='ExtEventStepDAO' map-class='java.util.LinkedHashMap'>
+      </util:map>
+
+
+</beans>

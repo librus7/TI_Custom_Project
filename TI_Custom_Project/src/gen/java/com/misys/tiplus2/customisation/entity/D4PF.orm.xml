@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='D4PF' package='com.misys.tiplus2.customisation.entity' tablename='D4PF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.D4PF.Key_D4PF' getter='$key'>
+		<member componentType='primitive' name='d4brr'>
+			<mapping binder='String' type='java.lang.String' columnName='D4PF.D4BRR' precision='5'/>
+		</member>
+		<member componentType='primitive' name='d4branch'>
+			<mapping binder='String' type='java.lang.String' columnName='D4PF.D4BRANCH' precision='8'/>
+		</member>
+		<member componentType='primitive' name='d4dteh'>
+			<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D4PF.D4DTEH' precision='7' scale='0'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='d4dte'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D4PF.D4DTE' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='d4dflg'>
+		<mapping binder='String' type='java.lang.String' columnName='D4PF.D4DFLG' precision='1'/>
+	</member>
+	<member componentType='primitive' name='d4dlm'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D4PF.D4DLM' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='D4PF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='d4brar'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='D4PF.D4BRAR' precision='11' scale='7'/>
+	</member>
+</entity>

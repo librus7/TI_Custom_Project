@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='FxRate86' package='com.misys.tiplus2.customisation.entity' tablename='FxRate86' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.FxRate86.Key_FxRate86' getter='$key'>
+		<member componentType='primitive' name='branch'>
+			<mapping binder='String' type='java.lang.String' columnName='FxRate86.BRANCH' precision='8'/>
+		</member>
+		<member componentType='primitive' name='code53'>
+			<mapping binder='String' type='java.lang.String' columnName='FxRate86.CODE53' precision='6'/>
+		</member>
+		<member componentType='primitive' name='curren49'>
+			<mapping binder='String' type='java.lang.String' columnName='FxRate86.CURREN49' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='typeflag'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='FxRate86.TYPEFLAG'/>
+	</member>
+	<member componentType='primitive' name='tstamp'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='FxRate86.TSTAMP'/>
+	</member>
+	<member componentType='primitive' name='buyexc03'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.BUYEXC03' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='buyperspd'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.BUYPERSPD' precision='9' scale='5'/>
+	</member>
+	<member componentType='primitive' name='buyexby'>
+		<mapping binder='String' type='java.lang.String' columnName='FxRate86.BUYEXBY' precision='1'/>
+	</member>
+	<member componentType='primitive' name='buyspr07'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.BUYSPR07' precision='22' scale='8'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='FxRate86.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='sellex99'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.SELLEX99' precision='28' scale='20'/>
+	</member>
+	<member componentType='primitive' name='sellperspd'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.SELLPERSPD' precision='9' scale='5'/>
+	</member>
+	<member componentType='primitive' name='sellexby'>
+		<mapping binder='String' type='java.lang.String' columnName='FxRate86.SELLEXBY' precision='1'/>
+	</member>
+	<member componentType='primitive' name='sellsp03'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='FxRate86.SELLSP03' precision='22' scale='8'/>
+	</member>
+</entity>

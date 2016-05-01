@@ -1,0 +1,194 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='GVPF' package='com.misys.tiplus2.customisation.entity' tablename='GVPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.GVPF.Key_GVPF' getter='$key'>
+		<member componentType='primitive' name='bank_ent'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.BANK_ENT' precision='8'/>
+		</member>
+		<member componentType='primitive' name='gvbrnm'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVBRNM' precision='8'/>
+		</member>
+		<member componentType='primitive' name='gvccy'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCCY' precision='3'/>
+		</member>
+		<member componentType='primitive' name='gvcus1sbb'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUS1SBB' precision='8'/>
+		</member>
+		<member componentType='primitive' name='gvcus1'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUS1' precision='20'/>
+		</member>
+		<member componentType='primitive' name='gving'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVING' precision='2'/>
+		</member>
+		<member componentType='primitive' name='gvmvt'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVMVT' precision='1'/>
+		</member>
+		<member componentType='primitive' name='gvprf'>
+			<mapping binder='String' type='java.lang.String' columnName='GVPF.GVPRF' precision='1'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='date_dl'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='GVPF.DATE_DL' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='gvabf'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVABF' precision='4'/>
+	</member>
+	<member componentType='primitive' name='gvanf'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVANF' precision='12'/>
+	</member>
+	<member componentType='primitive' name='gvasf'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVASF' precision='4'/>
+	</member>
+	<member componentType='primitive' name='gvclcc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCLCC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gvclc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCLC' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gvcusc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUSC' precision='6'/>
+	</member>
+	<member componentType='primitive' name='gvcus'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUS' precision='6'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gvnrd'>
+		<mapping binder='BigDecimal' type='java.math.BigDecimal' columnName='GVPF.GVNRD' precision='7' scale='0'/>
+	</member>
+	<member componentType='primitive' name='gvnaacc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNAACC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gvswb'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSWB' precision='4'/>
+	</member>
+	<member componentType='primitive' name='gvswbr'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSWBR' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gvcnas'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCNAS' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gvswl'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSWL' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gvcus1csbb'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUS1CSBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='gvcus1c'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVCUS1C' precision='20'/>
+	</member>
+	<member componentType='primitive' name='gvna1'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gvna2'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gvna3'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gvna4'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='gvnatlit'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNATLIT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gvoanc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVOANC' precision='34'/>
+	</member>
+	<member componentType='primitive' name='gvyins'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVYINS' precision='1'/>
+	</member>
+	<member componentType='primitive' name='clearid'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.CLEARID' precision='10'/>
+	</member>
+	<member componentType='primitive' name='clearmbe'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.CLEARMBE' precision='8'/>
+	</member>
+	<member componentType='primitive' name='tigvnar'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIGVNAR' precision='222'/>
+	</member>
+	<member componentType='primitive' name='gvnst'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNST' precision='6'/>
+	</member>
+	<member componentType='primitive' name='gvnst_mbe'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVNST_MBE' precision='8'/>
+	</member>
+	<member componentType='primitive' name='gvacct'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVACCT' precision='34'/>
+	</member>
+	<member componentType='primitive' name='sll_acc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_ACC' precision='35'/>
+	</member>
+	<member componentType='primitive' name='sll_sbank'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_SBANK' precision='4'/>
+	</member>
+	<member componentType='primitive' name='sll_sbrn'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_SBRN' precision='3'/>
+	</member>
+	<member componentType='primitive' name='sll_sctr'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_SCTR' precision='2'/>
+	</member>
+	<member componentType='primitive' name='sll_sloc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_SLOC' precision='2'/>
+	</member>
+	<member componentType='primitive' name='sll_sbb'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_SBB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='sll_mnm'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_MNM' precision='20'/>
+	</member>
+	<member componentType='primitive' name='sll_na1'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_NA1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='sll_na2'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_NA2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='sll_na3'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_NA3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='sll_na4'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_NA4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='sll_tlit'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.SLL_TLIT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gvsha'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSHA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gvsrc'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSRC' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gvuc1'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVUC1' precision='3'/>
+	</member>
+	<member componentType='primitive' name='gvuc2'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVUC2' precision='3'/>
+	</member>
+	<member componentType='primitive' name='timecode1'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMECODE1' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet1'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMEDET1' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecode2'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMECODE2' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet2'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMEDET2' precision='9'/>
+	</member>
+	<member componentType='primitive' name='timecode3'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMECODE3' precision='8'/>
+	</member>
+	<member componentType='primitive' name='timedet3'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.TIMEDET3' precision='9'/>
+	</member>
+	<member componentType='primitive' name='gvxm'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVXM' precision='2'/>
+	</member>
+	<member componentType='primitive' name='gvvianost'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVVIANOST' precision='1'/>
+	</member>
+	<member componentType='primitive' name='gvsccy'>
+		<mapping binder='String' type='java.lang.String' columnName='GVPF.GVSCCY' precision='3'/>
+	</member>
+</entity>

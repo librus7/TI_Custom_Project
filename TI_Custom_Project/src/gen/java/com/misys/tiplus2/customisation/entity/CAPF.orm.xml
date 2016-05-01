@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CAPF' package='com.misys.tiplus2.customisation.entity' tablename='CAPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CAPF.Key_CAPF' getter='$key'>
+		<member componentType='primitive' name='cabrnm'>
+			<mapping binder='String' type='java.lang.String' columnName='CAPF.CABRNM' precision='8'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='autonomous'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.AUTONOMOUS' precision='1'/>
+	</member>
+	<member componentType='primitive' name='business'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.BUSINESS' precision='1'/>
+	</member>
+	<member componentType='primitive' name='bankgroup'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.BANKGROUP' precision='1'/>
+	</member>
+	<member componentType='primitive' name='baseccy'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.BASECCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='city'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CITY' precision='35'/>
+	</member>
+	<member componentType='primitive' name='fullname'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.FULLNAME' precision='70'/>
+	</member>
+	<member componentType='primitive' name='furtherid'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.FURTHERID' precision='35'/>
+	</member>
+	<member componentType='primitive' name='services'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.SERVICES' precision='1'/>
+	</member>
+	<member componentType='primitive' name='cabad1'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABAD1' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cabad2'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABAD2' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cabad3'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABAD3' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cabad4'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABAD4' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cabad5'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABAD5' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cabrn'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABRN' precision='35'/>
+	</member>
+	<member componentType='primitive' name='catly'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CATLY' precision='16'/>
+	</member>
+	<member componentType='primitive' name='catph'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CATPH' precision='16'/>
+	</member>
+	<member componentType='primitive' name='children'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CHILDREN' precision='1'/>
+	</member>
+	<member componentType='primitive' name='email'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.EMAIL' precision='128'/>
+	</member>
+	<member componentType='primitive' name='fax'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.FAX' precision='20'/>
+	</member>
+	<member componentType='primitive' name='telephone'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.TELEPHONE' precision='20'/>
+	</member>
+	<member componentType='primitive' name='telexab'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.TELEXAB' precision='8'/>
+	</member>
+	<member componentType='primitive' name='telex'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.TELEX' precision='20'/>
+	</member>
+	<member componentType='primitive' name='country'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.COUNTRY' precision='2'/>
+	</member>
+	<member componentType='primitive' name='branchent'>
+		<mapping binder='Long' type='java.lang.Long' columnName='CAPF.BRANCHENT'/>
+	</member>
+	<member componentType='primitive' name='rateformat'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.RATEFORMAT' precision='3'/>
+	</member>
+	<member componentType='primitive' name='tolerance'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CAPF.TOLERANCE'/>
+	</member>
+	<member componentType='primitive' name='inheritcdp'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.INHERITCDP' precision='1'/>
+	</member>
+	<member componentType='primitive' name='tibicn'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.TIBICN' precision='20'/>
+	</member>
+	<member componentType='primitive' name='brchlevel'>
+		<mapping binder='Integer' type='java.lang.Integer' columnName='CAPF.BRCHLEVEL'/>
+	</member>
+	<member componentType='primitive' name='localccy'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.LOCALCCY' precision='3'/>
+	</member>
+	<member componentType='primitive' name='mainbank'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.MAINBANK' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mainbranch'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.MAINBRANCH' precision='8'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='notrans'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.NOTRANS' precision='1'/>
+	</member>
+	<member componentType='primitive' name='optparset'>
+		<mapping binder='Long' type='java.lang.Long' columnName='CAPF.OPTPARSET'/>
+	</member>
+	<member componentType='primitive' name='paramset'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.PARAMSET' precision='1'/>
+	</member>
+	<member componentType='primitive' name='parent_brn'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.PARENT_BRN' precision='8'/>
+	</member>
+	<member componentType='primitive' name='caswb'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CASWB' precision='4'/>
+	</member>
+	<member componentType='primitive' name='caswbr'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CASWBR' precision='3'/>
+	</member>
+	<member componentType='primitive' name='cacnas'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CACNAS' precision='2'/>
+	</member>
+	<member componentType='primitive' name='caswl'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CASWL' precision='2'/>
+	</member>
+	<member componentType='primitive' name='swift_brn'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.SWIFT_BRN' precision='1'/>
+	</member>
+	<member componentType='primitive' name='timezone'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.TIMEZONE' precision='100'/>
+	</member>
+	<member componentType='primitive' name='ultparent'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.ULTPARENT' precision='8'/>
+	</member>
+	<member componentType='primitive' name='cabbn'>
+		<mapping binder='String' type='java.lang.String' columnName='CAPF.CABBN' precision='4'/>
+	</member>
+</entity>

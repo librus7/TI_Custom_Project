@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='CTPF' package='com.misys.tiplus2.customisation.entity' tablename='CTPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.CTPF.Key_CTPF' getter='$key'>
+		<member componentType='primitive' name='cttcd'>
+			<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTCD' precision='3'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='ctdci'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTDCI' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctdfa'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTDFA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctrvt'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTRVT' precision='1'/>
+	</member>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctpca'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTPCA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctpea'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTPEA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctpia'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTPIA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctpma'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTPMA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ctpta'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTPTA' precision='1'/>
+	</member>
+	<member componentType='primitive' name='cttcm'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTCM' precision='3'/>
+	</member>
+	<member componentType='primitive' name='cttcn'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTCN' precision='35'/>
+	</member>
+	<member componentType='primitive' name='cttcdr'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTCDR' precision='3'/>
+	</member>
+	<member componentType='primitive' name='cttc2'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTC2' precision='4'/>
+	</member>
+	<member componentType='primitive' name='cttc4'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTC4' precision='4'/>
+	</member>
+	<member componentType='primitive' name='cttc1'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTC1' precision='4'/>
+	</member>
+	<member componentType='primitive' name='cttc3'>
+		<mapping binder='String' type='java.lang.String' columnName='CTPF.CTTC3' precision='4'/>
+	</member>
+</entity>

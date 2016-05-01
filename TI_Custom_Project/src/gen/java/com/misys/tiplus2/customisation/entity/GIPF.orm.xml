@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<entity name='GIPF' package='com.misys.tiplus2.customisation.entity' tablename='GIPF' version='1.0' xmlns='urn:persistence.tiplus2.misys.com'>
+	<key name='com.misys.tiplus2.customisation.entity.GIPF.Key_GIPF' getter='$key'>
+		<member componentType='primitive' name='gibrnm'>
+			<mapping binder='String' type='java.lang.String' columnName='GIPF.GIBRNM' precision='8'/>
+		</member>
+		<member componentType='primitive' name='giccy'>
+			<mapping binder='String' type='java.lang.String' columnName='GIPF.GICCY' precision='3'/>
+		</member>
+		<member componentType='primitive' name='giing'>
+			<mapping binder='String' type='java.lang.String' columnName='GIPF.GIING' precision='2'/>
+		</member>
+	</key>
+	<member componentType='primitive' name='mnt_in_bo'>
+		<mapping binder='String' type='java.lang.String' columnName='GIPF.MNT_IN_BO' precision='1'/>
+	</member>
+	<member componentType='primitive' name='ginst'>
+		<mapping binder='String' type='java.lang.String' columnName='GIPF.GINST' precision='6'/>
+	</member>
+	<member componentType='primitive' name='ginst_mbe'>
+		<mapping binder='String' type='java.lang.String' columnName='GIPF.GINST_MBE' precision='8'/>
+	</member>
+</entity>
