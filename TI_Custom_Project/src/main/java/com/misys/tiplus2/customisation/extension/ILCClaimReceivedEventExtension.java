@@ -6,10 +6,6 @@ public class ILCClaimReceivedEventExtension extends EventExtension {
 
 	public ILCClaimReceivedEventExtension() {
 		// TODO Auto-generated constructor stub
-		//1st change yyyy local xxx2
-		//1st change yyyy server xxxx3
-		//extra client xexexexxxxx xxaxaxaxassqxaaa
-
 	}
 
 	@Override
