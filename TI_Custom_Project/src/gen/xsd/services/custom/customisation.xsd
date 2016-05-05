@@ -858,7 +858,41 @@ category:IGT,IGT
         </xsd:annotation>
         <xsd:complexContent>
             <xsd:restriction base='Event'>
-                <xsd:sequence/>
+                <xsd:sequence>
+
+
+                    <xsd:element name='AgentWithholdingAmount' minOccurs='0'>
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <java.property.name>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.property.name>
+                                <msg.event.code>AAB</msg.event.code>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                            <xsd:restriction base='xsd:decimal'>
+                                <xsd:totalDigits value='12'/>
+                                <xsd:fractionDigits value='12'/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name='AgentAmount' minOccurs='0'>
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <java.property.name>com.misys.tiplus2.apps.ti.variants.varsw.pane.GWRExtraData</java.property.name>
+                                <msg.event.code>AAC</msg.event.code>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                            <xsd:restriction base='xsd:decimal'>
+                                <xsd:totalDigits value='12'/>
+                                <xsd:fractionDigits value='12'/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+
+              </xsd:sequence>
+
             </xsd:restriction>
         </xsd:complexContent>
     </xsd:complexType>

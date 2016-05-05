@@ -291,6 +291,43 @@ public class EventPane extends ExtensionWebPane {
         }
     }
 //button handling 
+   private ExtendedButtonControlWrapper btnTestButtonTestLayout;
+   
+   public final ExtendedButtonControlWrapper getBtnTestButtonTestLayout() {
+        if (btnTestButtonTestLayout==null){
+            EnigmaButton btn = new EnigmaButton(this, "Test");
+            btn.setLogicalName("btnTestButtonTestLayout");
+            btnTestButtonTestLayout = new ExtendedButtonControlWrapper(btn);
+        }
+        return btnTestButtonTestLayout;
+   }
+   
+   /**
+    *   Method called via JSF to run the action method
+    */
+   public final String fireTestButtonTestLayoutButtonAction() {   
+        Loggers.method().enter(LOG);
+        PaneManager.enterEvent();
+        try {
+            onTestButtonTestLayoutButton();
+        } catch (Exception ex) {
+            String msg = String.format("Failed within '%s' action event within layout '%s'. Exception is: %s", "TestButton", "TestLayout", ex);
+            suppressedException(ex, LOG, msg);
+            driverWrapper.logError(msg);
+        }	
+        String result = PaneManager.exitEvent();
+        Loggers.method().exit(LOG, result);
+        return result;
+   }
+   
+    /**
+     * Button action method that may be overridden in extension pane
+     * for control <code>TestButton</code> in layout <code>TestLayout</code>
+     *
+     */
+   public void onTestButtonTestLayoutButton() {   
+        Loggers.general().debug(LOG, "on{}Button:{}", "TestButtonTestLayout", ValidationTexts.METHOD_NOT_IMPLEMENTED);
+   }   
 //end of button handling
 
 
@@ -298,12 +335,12 @@ public class EventPane extends ExtensionWebPane {
 
 
 // start:auto submit action events
-     
+        
 // end:auto submit action events
 
 
 // start:repeating field auto submit action events
-   
+    
 // end:repeating-field auto submit action events
 
 
@@ -317,7 +354,7 @@ public class EventPane extends ExtensionWebPane {
         
         postMessageProcessing_main();
 
-           
+            
         Loggers.method().exit(LOG);
     }
     
@@ -327,7 +364,7 @@ public class EventPane extends ExtensionWebPane {
             Iterator<String> it = getMessageValueChangeEventsIterator();
             while (it.hasNext()) {
                 String id = it.next();
-                 }
+                    }
         }
         finally {
             clearMessageValueChangeEvents();
@@ -351,7 +388,7 @@ public class EventPane extends ExtensionWebPane {
         }
     }
     
-       
+        
 
     /**
      *  This method may be called within validation code if required.

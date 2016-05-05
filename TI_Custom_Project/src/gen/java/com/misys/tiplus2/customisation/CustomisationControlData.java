@@ -40,6 +40,7 @@ public class CustomisationControlData implements CustomisationControlDataIF {
         // Customer
         populateCustomerC_C_Controls();
         // Event
+        populateEventIGT_IIG_Controls();
         populateEventILC_CRC_Controls();
         // Master
         // Posting
@@ -82,10 +83,21 @@ public class CustomisationControlData implements CustomisationControlDataIF {
      */
     private final void initialiseFieldCodeMapEvent() {
         Loggers.method().enter(LOG);
+            initialiseFieldCodeMapEventIGT_IIG();
             initialiseFieldCodeMapEventILC_CRC();
             Loggers.method().exit(LOG);
     }
     
+        private final void initialiseFieldCodeMapEventIGT_IIG() {
+        Loggers.method().enter(LOG);
+        //IGT_IIG
+        List<FieldCode> list = new ArrayList<FieldCode>();
+                list.add(new FieldCode("cAAC", "AgentAmount", "Agent Amount", "s", "AGNTAMT"));
+                list.add(new FieldCode("cAAB", "AgentWithholdingAmount", "Agent Withholding Amount", "s", "AGNTWAMT"));
+        
+                fieldCodeMap.put("IGT_IIG", list);
+        Loggers.method().exit(LOG);
+    }
         private final void initialiseFieldCodeMapEventILC_CRC() {
         Loggers.method().enter(LOG);
         //ILC_CRC
@@ -270,6 +282,23 @@ public class CustomisationControlData implements CustomisationControlDataIF {
         
     }
 
+// item=AssociationProxy [IGT_IIG]
+
+    private final void populateEventIGT_IIG_Controls() {
+        Map<String, Map<String, Attributes>> layouts =  new HashMap<String, Map<String, Attributes>>();
+        {
+            // main customisation fields...
+            Map<String, Attributes> layout = new HashMap<String, Attributes>();
+            layout.put("AgentAmount", new Attributes("AgentAmount").setMaxRownum(1).setFromColumn("AGNTAMT"));
+            layout.put("AgentWithholdingAmount", new Attributes("AgentWithholdingAmount").setMaxRownum(1).setFromColumn("AGNTWAMT"));
+            layouts.put("EventTestLayout", layout);
+        }
+
+
+        attributesMap.put("IGT_IIG", layouts);
+        
+    }
+
 // item=AssociationProxy [ILC_CRC]
 
     private final void populateEventILC_CRC_Controls() {
@@ -304,7 +333,7 @@ public class CustomisationControlData implements CustomisationControlDataIF {
 	public List<String> getVariants()
 	{
 		List<String> lvariants = new ArrayList<String>();
-     	  	        	       
+     	  	        	       	       
 		lvariants.add("");
 		return lvariants;
 	}

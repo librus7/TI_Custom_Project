@@ -35,6 +35,19 @@
     <util:map id='ExtCustomerDAO' map-class='java.util.LinkedHashMap'>
       </util:map>
 
+    <bean id='igt-iig-resolver' class='com.misys.tiplus2.enigma.customisation.extensions.SingleLayoutAssociationResolver' scope='prototype'>
+        <property name='layoutId' value='igt-iig-TestLayout-extension'/>
+        <property name='major' value='IGT'/>
+        <property name='minor' value='IIG'/>
+    </bean>
+    <bean id='igt-iig-TestLayout-extension' class='com.misys.tiplus2.customisation.extension.IGTIssueEventExtRouter' scope='prototype'>
+        <property name='customisedPane'>
+            <bean class='com.misys.tiplus2.customisation.pane.IGTIssueEventPaneRouter'/>
+        </property>
+        <property name='layoutName' value='EventTestLayout'/>
+        <property name='majorCode' value='IGT'/>
+        <property name='minorCode' value='IIG'/>
+    </bean>
     <bean id='ilc-crc-resolver' class='com.misys.tiplus2.enigma.customisation.extensions.SingleLayoutAssociationResolver' scope='prototype'>
         <property name='layoutId' value='ilc-crc-ILCClaimReceivedLayout-extension'/>
         <property name='major' value='ILC'/>

@@ -47,6 +47,10 @@
                     <field-ref name="AGNTAMT"/>
                     <field-ref name="AGNTWAMT"/>
                 </field-group>
+                <field-group name="TestFieldGroup">
+                    <field-ref name="AGNTAMT"/>
+                    <field-ref name="AGNTWAMT"/>
+                </field-group>
             </field-groups>
             <layouts>
                 <layout name="Default" field-group="Default">
@@ -57,8 +61,20 @@
                     <control field="AGNTAMT" row="1" column="2" colspan="1" rowspan="1" validation="optional"/>
                     <control field="AGNTWAMT" row="2" column="2" colspan="1" rowspan="1" validation="optional"/>
                 </layout>
+                <layout name="TestLayout" field-group="TestFieldGroup">
+                    <label row="1" column="1" colspan="1" control-ref=""><![CDATA[Agent Amount]]></label>
+                    <label row="2" column="1" colspan="1" control-ref=""><![CDATA[Agent Withholding]]></label>
+                    <button row="3" column="2" colspan="1" name="TestButton">
+                        <caption><![CDATA[Test]]></caption>
+                    </button>
+                    <control field="AGNTAMT" row="1" column="2" colspan="1" rowspan="1" validation="optional"/>
+                    <control field="AGNTWAMT" row="2" column="2" colspan="1" rowspan="1" validation="optional"/>
+                </layout>
             </layouts>
             <associations>
+                <association major="IGT" minor="IIG">
+                    <layout-ref name="TestLayout" extension-pane="com.misys.tiplus2.customisation.pane.IGTIssueEventPaneRouter" extension-handler="com.misys.tiplus2.customisation.extension.IGTIssueEventExtRouter"/>
+                </association>
                 <association major="ILC" minor="CRC">
                     <layout-ref name="ILCClaimReceivedLayout" extension-pane="com.misys.tiplus2.customisation.pane.ILCClaimReceivedEventPane" extension-handler="com.misys.tiplus2.customisation.extension.ILCClaimReceivedEventExtension"/>
                 </association>
