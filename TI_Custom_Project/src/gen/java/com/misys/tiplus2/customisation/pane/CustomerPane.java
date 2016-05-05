@@ -184,6 +184,7 @@ public class CustomerPane extends ExtensionWebPane {
          */
         @Override
         public final void setValue(String newValue) {
+            Loggers.method().setter(LOG, newValue);
                 if (canUpdate() && newValue != null) {
                     agentWithholdingPercentage.setEnValue(newValue);
                 }

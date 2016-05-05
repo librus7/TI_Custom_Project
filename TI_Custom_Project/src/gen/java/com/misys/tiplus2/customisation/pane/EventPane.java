@@ -261,6 +261,7 @@ public class EventPane extends ExtensionWebPane {
          */
         @Override
         public final void setValue(String newValue) {
+            Loggers.method().setter(LOG, newValue);
                 if (canUpdate() && newValue != null) {
                     agentWithholdingAmount.setEnValue(newValue);
                 }
@@ -285,6 +286,7 @@ public class EventPane extends ExtensionWebPane {
          */
         @Override
         public final void setValue(String newValue) {
+            Loggers.method().setter(LOG, newValue);
                 if (canUpdate() && newValue != null) {
                     agentAmount.setEnValue(newValue);
                 }

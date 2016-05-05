@@ -92,4 +92,9 @@
       </util:map>
 
 
+<!--
+    Section of beans (maps) used to store the default values
+    for any static tables
+-->
+
 </beans>
